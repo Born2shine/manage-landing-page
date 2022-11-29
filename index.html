@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <title>Manage Landing Page</title>
+  </head>
+  <body>
+    <main class="relative overflow-hidden">
+      <!-- Floating Oval Hero-->
+      <div
+        class="absolute -z-10 -right-20 -top-20 w-96 md:w-auto md:-right-20 md:-top-64"
+      >
+        <img src="./assets/images/bg-tablet-pattern.svg" class="w-" alt="" />
+      </div>
+      <!-- Navbar -->
+      <nav class="lg:container p-6 mx-auto">
+        <!-- Flex Container -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="pt-2">
+            <img src="./assets/images/logo.svg" alt="" />
+          </div>
+          <!-- End Logo -->
+          <!-- Menu Items -->
+          <div class="hidden md:flex space-x-6">
+            <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+            <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+          </div>
+          <!-- Mobile Menu -->
+          <div class="mobile-menu md:hidden -translate-x-full transition-transform z-50 space-x-6 fixed left-0 top-0 h-full w-1/2 bg-white shadow-lg">
+            <nav class="flex flex-col ml-10 mt-20 space-y-7">
+              <a href="#pricing" class="text-orange-500 text-lg hover:text-darkGrayishBlue">Pricing</a>
+              <a href="#product" class="text-orange-500 text-lg hover:text-darkGrayishBlue">Product</a>
+              <a href="#about" class="text-orange-500 text-lg hover:text-darkGrayishBlue">About Us</a>
+              <a href="#careers" class="text-orange-500 text-lg hover:text-darkGrayishBlue">Careers</a>
+              <a href="#community" class="text-orange-500 text-lg hover:text-darkGrayishBlue">Community</a>
+            </nav>
+            <img src="./assets/images/icon-close.svg" onclick="toggleMenu()" class="absolute right-5 top-5" alt="">
+          </div>
+          <!-- Button -->
+          <a
+            href="#"
+            class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight drop-shadow-lg"
+            >Get Started</a
+          >
+          <!-- Menu Btn -->
+          <img
+            src="./assets/images/icon-hamburger.svg"
+            class="md:hidden"
+            alt=""
+            id="menu-btn"
+          />
+        </div>
+        <!-- Flex Container -->
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- Hero Section -->
+      <section id="hero mt-24">
+        <!-- Flex Container -->
+        <div
+          class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto space-y-0 md:space-y-0"
+        >
+          <!-- Left Item -->
+          <div class="flex flex-col mb-20 md:mb-32 md:space-y-12 md:w-1/2">
+            <h1
+              class="max-w-md text-4xl font-bold mt-10 text-center md:text-left md:text-5xl"
+            >
+              Bring everyone together to build better product
+            </h1>
+            <p
+              class="max-w-sm text-center mt-4 my-10 text-darkGrayishBlue md:text-left leading-7"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+              aliquam perferendis tempore laudantium inventore quaerat. Quisquam
+              quidem eos doloremque qui!
+            </p>
+            <div class="text-center md:text-left">
+              <a
+                href="#"
+                class="w-fit hover:bg-orange-500 rounded-full text-white p-4 md:p-3 px-10 md:px-5 bg-orange-600"
+              >
+                Get Started
+              </a>
+            </div>
+          </div>
+          <!-- End Left Item -->
+
+          <!-- Image -->
+          <div>
+            <img
+              src="./assets/images/illustration-intro.svg"
+              class="w-fit"
+              alt=""
+            />
+          </div>
+          <!-- End Image -->
+        </div>
+        <!-- End Flex Container -->
+
+        <!-- Manage Section -->
+        <div class="container p-6 mx-auto md:mt-24">
+          <div class="md:flex items-start justify-between">
+            <aside class="left mb-10 md:mb-0 md:w-1/2">
+              <h1
+                class="text-darkBlue text-center md:text-left text-4xl md:text-3xl font-bold md:w-2/3"
+              >
+                What's different about Manage?
+              </h1>
+              <p
+                class="text-darkGrayishBlue md:w-3/4 pt-3 text-center md:text-left leading-7"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                iusto ipsam rem quis magni eos accusantium illum hic, quasi
+                consectetur.
+              </p>
+            </aside>
+            <aside class="right md:w-1/2">
+              <!-- single container -->
+              <div class="single-container">
+                <div
+                  class="hero bg-veryPaleRed md:bg-inherit rounded-l-full flex items-start space-x-6"
+                >
+                  <span class="px-5 p-1 rounded-full text-white bg-orange-600"
+                    >01</span
+                  >
+                  <h5 class="text-darkBlue font-bold">
+                    Track company-wide progress
+                  </h5>
+                </div>
+                <div class="md:ml-20">
+                  <p class="text-darkGrayishBlue pt-2">
+                    Lorem ipsum dolor sit amet consectetur adi elit. Ratione
+                    quod sint deleniti, accusamus, optio asperiores ullam
+                    consequuntur praesentium illum eum doloremque suscipit! Quas
+                    amet fuga obcaecati natus, nihil velit eos.
+                  </p>
+                </div>
+              </div>
+              <!-- end single container -->
+
+              <!-- single container -->
+              <div class="single-container mt-6">
+                <div
+                  class="hero bg-veryPaleRed md:bg-inherit rounded-l-full flex items-start space-x-6"
+                >
+                  <span class="px-5 p-1 rounded-full text-white bg-orange-600"
+                    >02</span
+                  >
+                  <h5 class="text-darkBlue font-bold">
+                    Track company-wide progress
+                  </h5>
+                </div>
+                <div class="md:ml-20">
+                  <p class="text-darkGrayishBlue pt-2">
+                    Lorem ipsum dolor sit amet consectetur ading elit. Ratione
+                    quod sint deleniti, accusamus, optio asperiores ullam
+                    consequuntur praesentium illum eum doloremque suscipit! Quas
+                    amet fuga obcaecati natus, nihil velit eos.
+                  </p>
+                </div>
+              </div>
+              <!-- end single container -->
+
+              <!-- single container -->
+              <div class="single-container mt-6">
+                <div
+                  class="hero bg-veryPaleRed md:bg-inherit rounded-l-full flex items-start space-x-6"
+                >
+                  <span class="px-5 p-1 rounded-full text-white bg-orange-600"
+                    >03</span
+                  >
+                  <h5 class="text-darkBlue font-bold">
+                    Track company-wide progress
+                  </h5>
+                </div>
+                <div class="md:ml-20">
+                  <p class="text-darkGrayishBlue pt-2">
+                    Lorem ipsum dolor sit amet consectetur ading elit. Ratione
+                    quod sint deleniti, accusamus, optio asperiores ullam
+                    consequuntur praesentium illum eum doloremque suscipit! Quas
+                    amet fuga obcaecati natus, nihil velit eos.
+                  </p>
+                </div>
+              </div>
+              <!-- end single container -->
+            </aside>
+          </div>
+        </div>
+        <!-- End Manage Section -->
+      </section>
+      <!-- End Hero Section -->
+
+      <!-- Testimonial -->
+      <section class="testimonial container p-6 mx-auto mt-20">
+        <h1 class="title text-darkBlue text-4xl font-bold text-center mb-10">
+          What they've said
+        </h1>
+        <div
+          class="testimonial-wrapper text-center flex flex-col md:flex-row justify-between md:space-x-5 space-y-14 md:space-y-0 mt-20"
+        >
+          <!-- single testimonial -->
+          <div class="single-testimonial bg-gray-100 p-4 relative">
+            <img
+              src="./assets/images/avatar-ali.png"
+              class="w-16 h-16 md:w-12 md:h-12 absolute -top-10 md:-top-5 left-32 md:left-44"
+              alt=""
+            />
+            <div class="info mt-6">
+              <span class="text-darkBlue font-bold">Anisha Li</span>
+              <p class="text-darkGrayishBlue pt-5 leading-8 mb-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate aperiam deleniti veniam suscipit assumenda quo.
+              </p>
+            </div>
+          </div>
+          <!-- end single testimonial -->
+
+          <!-- single testimonial -->
+          <div
+            class="single-testimonial hidden md:block bg-gray-100 p-4 relative"
+          >
+            <img
+              src="./assets/images/avatar-ali.png"
+              class="w-16 h-16 md:w-12 md:h-12 absolute -top-10 md:-top-5 left-32 md:left-44"
+              alt=""
+            />
+            <div class="info mt-6">
+              <span class="text-darkBlue font-bold">Anisha Li</span>
+              <p class="text-darkGrayishBlue pt-5 leading-7 mb-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate aperiam deleniti veniam suscipit assumenda quo.
+              </p>
+            </div>
+          </div>
+          <!-- end single testimonial -->
+
+          <!-- single testimonial -->
+          <div
+            class="single-testimonial hidden md:block bg-gray-100 p-4 relative"
+          >
+            <img
+              src="./assets/images/avatar-ali.png"
+              class="w-16 h-16 md:w-12 md:h-12 absolute -top-10 md:-top-5 left-32 md:left-44"
+              alt=""
+            />
+            <div class="info mt-6">
+              <span class="text-darkBlue font-bold">Anisha Li</span>
+              <p class="text-darkGrayishBlue pt-5 leading-7 mb-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate aperiam deleniti veniam suscipit assumenda quo.
+              </p>
+            </div>
+          </div>
+          <!-- end single testimonial -->
+        </div>
+        <div class="flex mt-6 justify-center space-x-2">
+          <span
+            class="w-3 h-3 border-2 border-orange-600 content-none rounded-full cursor-pointer"
+          ></span>
+          <span
+            class="w-3 h-3 border-2 border-orange-600 bg-orange-600 content-none rounded-full cursor-pointer"
+          ></span>
+          <span
+            class="w-3 h-3 border-2 border-orange-600 content-none rounded-full cursor-pointer"
+          ></span>
+          <span
+            class="w-3 h-3 border-2 border-orange-600 content-none rounded-full cursor-pointer"
+          ></span>
+        </div>
+        <div class="text-center mt-16 md:mt-10">
+          <a
+            href="#"
+            class="w-fit hover:bg-orange-500 rounded-full text-white p-4 md:p-3 px-10 md:px-8 bg-orange-600 drop-shadow-lg text-sm"
+          >
+            Get Started
+          </a>
+        </div>
+      </section>
+      <!-- End Testimonial -->
+
+      <footer class="mt-28">
+        <div class="top bg-orange-600 p-10 md:p-14 overflow-hidden relative">
+          <div
+            class="container md:px-6 mx-auto flex flex-col md:flex-row justify-between items-center"
+          >
+            <img
+              src="./assets/images/bg-tablet-pattern.svg"
+              class="w-96 absolute -left-52 md:left-40 top-122 md:-top-6 opacity-10"
+              alt=""
+            />
+            <h2
+              class="text-4xl text-center md:text-left text-yellow-50 font-semibold md:w-1/3"
+            >
+              Simplify how your team works today.
+            </h2>
+            <a
+              href="#"
+              class="w-fit h-fit mt-10 md:mt-0 hover:bg-orange-200 hover:text-wite rounded-full bg-orange-50 p-4 md:p-3 px-10 md:px-10 text-orange-600 drop-shadow-lg text-sm"
+            >
+              Get Started
+            </a>
+            <img
+              src="./assets/images/bg-tablet-pattern.svg"
+              class="hidden md:block w-96 absolute -right-40 -top-64 opacity-10"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="bg-veryDarkBlue py-10 pb-20 md:p-14">
+          <div
+            class="container md:px-6 mx-auto flex flex-col-reverse md:flex-row justify-between items-center"
+          >
+            <div
+              class="flex flex-col-reverse items-center md:flex-col gap-y-10 space-y-14"
+            >
+              <img
+                src="./assets/images/logo.svg"
+                class="w-52 md:w-full py-4"
+                alt=""
+              />
+              <div class="flex space-x-10 md:space-x-3">
+                <img
+                  src="./assets/images/icon-facebook.svg"
+                  class="w-7 h-7 md:w-full md:h-full cursor-pointer"
+                  alt=""
+                />
+                <img
+                  src="./assets/images/icon-youtube.svg"
+                  class="w-7 h-7 md:w-full md:h-full cursor-pointer"
+                  alt=""
+                />
+                <img
+                  src="./assets/images/icon-twitter.svg"
+                  class="w-7 h-7 md:w-full md:h-full cursor-pointer"
+                  alt=""
+                />
+                <img
+                  src="./assets/images/icon-pinterest.svg"
+                  class="w-7 h-7 md:w-full md:h-full cursor-pointer"
+                  alt=""
+                />
+                <img
+                  src="./assets/images/icon-instagram.svg"
+                  class="w-7 h-7 md:w-full md:h-full cursor-pointer"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="flex mt-12 md:mt-0 space-x-32 md:space-x-52">
+              <ul class="flex flex-col space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="text-lg text-yellow-50 hover:text-orange-400"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-lg text-yellow-50 hover:text-orange-400"
+                    >Pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-lg text-yellow-50 hover:text-orange-400"
+                    >Product</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-lg text-yellow-50 hover:text-orange-400"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="flex flex-col space-y-2">
+                <li>
+                  <a href="#" class="text-yellow-50 hover:text-orange-400"
+                    >Career</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-yellow-50 hover:text-orange-400"
+                    >Community</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-yellow-50 hover:text-orange-400"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-yellow-50 hover:text-orange-400"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-col space-y-14">
+              <div class="flex space-x-3 md:space-x-2">
+                <input
+                  type="text"
+                  class="px-7 md:px-10 md:p-2 rounded-full focus:outline-none"
+                  placeholder="Enter email address"
+                />
+                <a
+                  href="#"
+                  class="bg-orange-500 hover:bg-orange-400 text-white p-3 md:p-3 px-8 md:px-6 rounded-full"
+                  >Go</a
+                >
+              </div>
+              <span
+                class="text-darkGrayishBlue text-lg md:text-base text-center md:text-left absolute bottom-8 left-12 md:left-0 md:bottom-0 md:relative"
+              >
+                Copyright 2020 All Right Reserved</span
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Floating Oval Footer -->
+      <div class="hidden md:block absolute -z-10 -left-1/3 top-2/4">
+        <img src="./assets/images/bg-tablet-pattern.svg" class="w-fit" alt="" />
+      </div>
+    </main>
+  </body>
+
+  <script src="./assets/js/app.js"></script>
+</html>
